@@ -34,7 +34,7 @@ a {
 }
 body {
   max-width: 2000px;
-  margin: auto;
+  margin: 0 auto;
   font-family: Realway, sans-serif;
 }
 
@@ -211,7 +211,7 @@ svg {
   height: 68px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 300ms linear;
 }
 .btn:hover {
   background-color: rgba(110, 156, 159, 0.8);
@@ -221,4 +221,78 @@ svg {
 
 .coliection {
   margin-top: 320px;
+}
+.coliection-h2 {
+  margin-bottom: 100px;
+  font-weight: 500;
+  font-size: 35px;
+}
+.carts {
+  display: flex;
+  justify-content: space-between;
+}
+.coliection-img {
+  margin-bottom: 25px;
+}
+.coliection-cart-p {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.coliection-cart-price {
+  color: silver;
+}
+.coliection-img {
+  position: relative;
+}
+
+.coliection-img:hover {
+  filter: brightness(60%);
+  z-index: 2;
+}
+.btn-opacity {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #6e9c9f;
+  background-color: white;
+  margin-top: 65px;
+  margin-bottom: 130px;
+  transition: color 0.4s linear;
+}
+.btn-opacity:hover {
+  color: white;
+}
+.what-inportant-h2 {
+  font-weight: 500;
+  font-size: 35px;
+}
+
+/* important */
+
+.carts-important {
+  display: flex;
+  justify-content: space-between;
+}
+.h3 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+.img-important {
+  margin-top: 95px;
+}
+.p-important {
+  font-size: 17px;
+  width: 305px;
+  font-weight: 500;
+  margin-bottom: 150px;
+}
+
+/* dream team */
+
+.dream-team-h2 {
+  font-weight: 500;
+  font-size: 35px;
 }
