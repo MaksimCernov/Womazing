@@ -5,6 +5,7 @@
   font-weight: 500;
   font-style: normal;
 }
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,200,400,regular,500,700&display=swap");
 
 @font-face {
   font-family: "Realway";
@@ -43,14 +44,16 @@ body {
   max-width: 1110px;
   margin: 0 auto;
 }
+
 .header {
   width: 100%;
-  height: 120px;
+  height: 95px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 140px;
 }
+
 .header-left {
   display: flex;
   align-items: center;
@@ -237,12 +240,14 @@ svg {
 }
 .coliection-img {
   margin-bottom: 25px;
+  cursor: pointer;
 }
 .coliection-cart-p {
   display: block;
   margin-bottom: 10px;
   font-weight: 700;
 }
+
 .coliection-cart-price {
   position: relative;
   color: silver;
@@ -269,7 +274,6 @@ svg {
 
 .coliection-img:hover {
   filter: brightness(60%);
-  z-index: 2;
 }
 .btn-opacity {
   display: block;
@@ -400,6 +404,7 @@ svg {
   font-size: 13px;
   color: black;
 }
+
 .second-line-footer-col3-list-img {
   display: flex;
 }
@@ -488,4 +493,61 @@ svg {
   cursor: pointer;
   font-size: 20px;
   color: silver;
+}
+
+/* Arrow */
+
+.coliection-cart {
+  position: relative;
+}
+
+.arrow_2 {
+  cursor: pointer;
+  position: absolute;
+  top: 225px;
+  left: 150px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: 60px;
+  height: 30px;
+}
+
+.arrow_2 div {
+  position: relative;
+  top: 20px;
+  width: 50px;
+  height: 3px;
+  background-color: white;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 20%);
+  left: 0;
+  display: block;
+}
+
+.arrow_2 div::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  top: 6px;
+  right: -3px;
+  background-color: white;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 20%);
+  transform: rotate(-45deg);
+}
+
+.arrow_2 div::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  top: -6px;
+  right: -3px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+.coliection-img:hover ~ .arrow_2 {
+  opacity: 1;
+}
+.arrow_2:hover {
+  opacity: 1;
 }
