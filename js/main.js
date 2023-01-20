@@ -12,3 +12,21 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// POP-UP
+
+window.addEventListener("DOMContentLoaded", function () {
+  document
+    .querySelector(".open-pop-up-js")
+    .addEventListener("click", function () {
+      document.querySelector("#pop-up").classList.toggle("pop-up-active");
+    });
+});
+
+window.addEventListener("DOMContentLoaded", function () {
+  document
+    .querySelector("#close-pop-up")
+    .addEventListener("click", function () {
+      document.querySelector("#pop-up").classList.toggle("pop-up-active");
+    });
+});
